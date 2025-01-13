@@ -16,5 +16,6 @@ public class Main {
 
         System.out.print("100 / 5 = ");
         System.out.println(calculator.divide(100, 5));
+	System.out.println("test");
     }
 }
