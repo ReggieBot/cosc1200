@@ -14,7 +14,6 @@ public class MaxMin {
 
         float max = getMax(first, second, third);
         System.out.println("The maximum number is: " + max);
-        ``
         float min = getMin(first, second, third);
         System.out.println("The minimum number is: " + min);
     }
