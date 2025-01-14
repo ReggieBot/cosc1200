@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class MaxMin {
     public static void main(String[] args) {
         
-        `Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Please enter the first number: ");
         float first = scanner.nextFloat();
