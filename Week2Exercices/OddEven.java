@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class OddEven {
     public static void main(String[] args) {
-        Scanner scanner2 = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter a number");
-        int number = scanner2.nextInt();
+        int number = scanner.nextInt();
         String result = checkEvenOdd(number);
         System.out.println(result);
     }
