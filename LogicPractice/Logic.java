@@ -10,6 +10,7 @@ public class Logic {
             System.out.println("they are both true");
         }
         else {
+
             System.out.println("one or both is untrue ");
         }
 
@@ -20,5 +21,6 @@ public class Logic {
         else {
             System.out.println("both are untrue");
         }
+	System.out.println("emacs test");
     }
 }
