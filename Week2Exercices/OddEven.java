@@ -9,6 +9,7 @@ public class OddEven {
         int number = scanner.nextInt();
         String result = checkEvenOdd(number);
         System.out.println(result);
+        scanner.close();
     }
 
     public static String checkEvenOdd(int number) {

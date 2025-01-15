@@ -11,6 +11,8 @@ public class Fibonacci {
 
         System.out.println("That position of the fibonacci sequence is = " + getFibonnaci(position));
 
+        scanner.close();
+
     }
 
     public static int getFibonnaci(int position) {
