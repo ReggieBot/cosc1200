@@ -14,4 +14,22 @@ public class Student {
         this.lastName = lastName;
         this.age = age;
     }
+
+    // getter methods
+    public String getId() {
+        return id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
 }
+
