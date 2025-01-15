@@ -1,6 +1,5 @@
 package org.oop.objects;
 
-import java.util.Formatter;
 
 public class Student {
     private String id;
