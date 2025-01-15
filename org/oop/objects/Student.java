@@ -49,6 +49,10 @@ public class Student {
         this.age = age;
     }
 
+    // show full name method
 
+    public String showFullName() {
+        return this.getFirstName() + " " + getLastName();
+    }
 }
 
