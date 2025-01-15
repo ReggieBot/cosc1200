@@ -31,5 +31,24 @@ public class Student {
     public int getAge() {
         return age;
     }
+
+    // setter methods
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+
 }
 
