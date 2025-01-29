@@ -54,5 +54,12 @@ public class Employee {
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+
+    // Calculates net salary of employee
+    public double calculateNetSalary() {
+        return salary - (salary * taxRate);
+    }
+
     
 }
