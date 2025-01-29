@@ -111,5 +111,51 @@ public class PayrollSystem {
         }
     }
 
+    // Updates employee salary
+    public void updateEmployeeSalary() {
+        // Error check if no employees have been added
+        if (employeeCount == 0) {
+            System.out.println("No employees added");
+            return;
+        }
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\nEnter employee ID to update salary: ");
+        int id = scanner.nextInt();
+
+        System.out.println("\nEnter new salary: ");
+        double newSalary = scanner.nextDouble();
+
+        // Checks if employee exists and if id matches
+        if (employee1 != null && employee1.getID() == id) {
+            employee1.setSalary(newSalary);
+            System.out.println("Salary updated");
+        } else if (employee2 != null && employee2.getID() == id) {
+            employee2.setSalary(newSalary);
+            System.out.println("Salary updated");
+        } else if (employee3 != null && employee3.getID() == id) {
+            employee3.setSalary(newSalary);
+            System.out.println("Salary updated");
+        } else if (employee4 != null && employee4.getID() == id) {
+            employee4.setSalary(newSalary);
+            System.out.println("Salary updated");
+        } else if (employee5 != null && employee5.getID() == id) {
+            employee5.setSalary(newSalary);
+            System.out.println("Salary updated");
+        } else {
+            System.out.println("Employee not found");
+        }
+    }
+
+
+    // Displays menu
+    public void displayMenu() {
+        System.out.println("\nMenu:");
+        System.out.println("1. Add Employee");
+        System.out.println("2. Display All Employee Details");
+        System.out.println("3. Search Employee");
+
+    }
+
     
 }
