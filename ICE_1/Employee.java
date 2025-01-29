@@ -61,5 +61,14 @@ public class Employee {
         return salary - (salary * taxRate);
     }
 
-    
+    // method to print employee details
+    public void employeeDetails() {
+        System.out.println("Employee ID: " + id);
+        System.out.println("Employee Name: " + name);
+        System.out.println("Employee Department: " + department);
+        System.out.println("Employee Salary: " + salary);
+        System.out.println("Employee Tax Rate: " + taxRate);
+        System.out.println("Employee Net Salary: " + calculateNetSalary());
+        System.out.println("\n");
+    }
 }
