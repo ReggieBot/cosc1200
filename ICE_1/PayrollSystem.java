@@ -57,5 +57,32 @@ public class PayrollSystem {
         System.out.println("Employee added");
     }
 
+    // Displays employee details
+    public void displayEmployeeDetails() {
+        // Error check if no employees have been added
+        if (employeeCount == 0) {
+            System.out.println("No employees added");
+            return;
+        }
+        
+        System.out.println("\nEmployee Details: ");
+        if (employee1 != null) {
+            employee1.employeeDetails();
+        }
+        if (employee2 != null) {
+            employee2.employeeDetails();
+        }
+        if (employee3 != null) {
+            employee3.employeeDetails();
+        }
+        if (employee4 != null) {
+            employee4.employeeDetails();
+        }
+        if (employee5 != null) {
+            employee5.employeeDetails();
+        }
+
+    }
+
     
 }
