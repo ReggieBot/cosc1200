@@ -6,7 +6,7 @@ public class Employee {
         private String name;
         private String department;
         private double salary;
-        private double taxRate;
+        private final double TAX_RATE = 0.10;
     
 
     // Constructor
@@ -15,7 +15,6 @@ public class Employee {
         this.name = name;
         this.department = department;
         this.salary = salary;
-        this.taxRate = taxRate;
     }
 
     // Getters and Setters
@@ -33,10 +32,6 @@ public class Employee {
 
     public double getSalary() {
         return salary;
-    }
-
-    public double getTaxRate() {
-        return taxRate;
     }
 
     public void setID(int id) {
@@ -58,7 +53,7 @@ public class Employee {
 
     // Calculates net salary of employee
     public double calculateNetSalary() {
-        return salary - (salary * taxRate);
+        return salary - (salary * TAX_RATE);
     }
 
     // method to print employee details
@@ -67,8 +62,9 @@ public class Employee {
         System.out.println("Employee Name: " + name);
         System.out.println("Employee Department: " + department);
         System.out.println("Employee Salary: " + salary);
-        System.out.println("Employee Tax Rate: " + taxRate);
+        System.out.println("Employee Tax Rate: " + TAX_RATE);
         System.out.println("Employee Net Salary: " + calculateNetSalary());
         System.out.println("\n");
     }
 }
+
