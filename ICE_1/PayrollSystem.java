@@ -159,7 +159,35 @@ public class PayrollSystem {
         System.out.println("Enter your choice: ");
     }
 
-    
+    // Switch caase for menu options inside a loop to keep the program running
+    public void runProgram() {
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            displayMenu();
+            int choice = scanner.nextInt();
+            switch (choice) {
+                case 1:
+                    addEmployee();
+                    break;
+                case 2:
+                    displayEmployeeDetails();
+                    break;
+                case 3:
+                    searchEmployee();
+                    break;
+                case 4:
+                    updateEmployeeSalary();
+                    break;
+                case 5:
+                    System.out.println("Exiting program");
+                    return;
+                default:
+                    System.out.println("Invalid Choice");
+            }
+
+        }
+    }
+
 
     
 }
