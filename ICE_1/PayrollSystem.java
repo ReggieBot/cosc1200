@@ -81,7 +81,22 @@ public class PayrollSystem {
         if (employee5 != null) {
             employee5.employeeDetails();
         }
+    }
 
+    // Searches for employee
+    public void searchEmployee() {
+        // Error check if no employees have been added
+        if (employeeCount == 0) {
+            System.out.println("No employees added");
+            return;
+        }
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter employee ID to search: ");
+        int id = scanner.nextInt();
+
+        // Checks if employee exists and if id matches
+        if (employee1 != null )
     }
 
     
