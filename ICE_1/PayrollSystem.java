@@ -154,8 +154,12 @@ public class PayrollSystem {
         System.out.println("1. Add Employee");
         System.out.println("2. Display All Employee Details");
         System.out.println("3. Search Employee");
-
+        System.out.println("4. Update Employee Salary");
+        System.out.println("5. Exit");
+        System.out.println("Enter your choice: ");
     }
+
+    
 
     
 }
