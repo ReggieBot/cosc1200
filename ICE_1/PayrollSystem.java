@@ -96,7 +96,19 @@ public class PayrollSystem {
         int id = scanner.nextInt();
 
         // Checks if employee exists and if id matches
-        if (employee1 != null )
+        if (employee1 != null && employee1.getID() == id) {
+            employee1.employeeDetails();
+        } else if (employee2 != null && employee2.getID() == id) {
+            employee2.employeeDetails();
+        } else if (employee3 != null && employee3.getID() == id) {
+            employee3.employeeDetails();
+        } else if (employee4 != null && employee4.getID() == id) {
+            employee4.employeeDetails();
+        } else if (employee5 != null && employee5.getID() == id) {
+            employee5.employeeDetails();
+        } else {
+            System.out.println("Employee not found");
+        }
     }
 
     
