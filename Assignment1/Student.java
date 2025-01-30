@@ -38,12 +38,12 @@ public class Student {
     public void setStudentID(String studentID) {
         this.studentID = studentID;
     }
-    
+
     // Displays student details
     public void displayDetails() {
         System.out.println("---Student Details---");
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Student ID: " + studentID);
+        System.out.println("Name: " + getName());
+        System.out.println("Age: " + getAge());
+        System.out.println("Student ID: " + getStudentID());
     }
 }
