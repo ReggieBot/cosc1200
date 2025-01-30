@@ -6,6 +6,14 @@ public class Student {
     private int age;
     private String studentID;
 
+    // Static variable (task 3)
+    /* 
+     * I wasn't sure if you wanted the static field to be private or public, so I made it private.
+     * If I was to make it public I wouldn't have to use a getter method to access it.
+     */
+    private static String collegeName = "Durham College";
+    
+
     // Constructor
     public Student(String name, int age, String studentID) {
         this.name = name;
@@ -25,6 +33,11 @@ public class Student {
     public String getStudentID() {
         return studentID;
     }
+
+    // Static getter method
+    public static String getCollegeName() {
+        return collegeName;
+    }
     
     // Setter methods
     public void setName(String name) {
@@ -39,11 +52,17 @@ public class Student {
         this.studentID = studentID;
     }
 
+    // Static setter method
+    public static void setCollegeName(String newName) {
+        collegeName = newName;
+    }
+
     // Displays student details
     public void displayDetails() {
         System.out.println("---Student Details---");
         System.out.println("Name: " + getName());
         System.out.println("Age: " + getAge());
         System.out.println("Student ID: " + getStudentID());
+        System.out.println("College Name: " + getCollegeName());
     }
 }
