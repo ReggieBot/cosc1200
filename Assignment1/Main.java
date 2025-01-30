@@ -6,6 +6,8 @@ public class Main {
         Student student1 = new Student("Reggie", 20, "100883021");
         Student student2 = new Student("Ben", 22, "100883021");
 
+        // Testing getter and setter methods
+        student2.setName("Benjamin");
         // Displaying student details
         student1.displayDetails();
         student2.displayDetails();
