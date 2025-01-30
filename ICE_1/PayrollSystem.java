@@ -29,10 +29,10 @@ public class PayrollSystem {
         int id = scanner.nextInt();
 
         System.out.println("Employee Name: ");
-        String name = scanner.nextLine();
+        String name = scanner.next();
 
         System.out.println("Employee Department: ");
-        String department = scanner.nextLine();
+        String department = scanner.next();
 
         System.out.println("Employee Salary: ");
         double salary = scanner.nextDouble();
