@@ -11,7 +11,6 @@
 
 // This class is where all the array methods will be stored
 
-
 package Assignment2;
 
 import java.util.Scanner;
