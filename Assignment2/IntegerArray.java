@@ -17,7 +17,7 @@ import java.util.Scanner;
 
 public class IntegerArray {
     // Initialized variables for the class
-    private Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
     private int[] array;
     private int arraySize;
 
@@ -94,9 +94,7 @@ public class IntegerArray {
     // Method to search for a user inputted number in the array
     // Iterates through the array and compares each element to user input
     // Returns true if the number is found, otherwise returns false
-    public boolean searchArray() {
-        System.out.println("Please enter a number to search for: ");
-        int searchNum = scanner.nextInt();
+    public boolean searchArray(int searchNum) {
         for (int i = 0; i < arraySize; i++) {
             if (array[i] == searchNum) {
                 return true;
