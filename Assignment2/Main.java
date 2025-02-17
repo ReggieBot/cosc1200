@@ -48,5 +48,7 @@ public class Main {
         array.bubbleSort();
         System.out.println("Sorted Array: ");
         array.displayArray();
+
+        scanner.close();
     }
 }
