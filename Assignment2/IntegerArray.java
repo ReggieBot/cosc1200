@@ -28,6 +28,7 @@ public class IntegerArray {
             System.out.println("Please enter a array size between 1-20");
             arraySize = scanner.nextInt();
         }
+        
 
         // Create array with user input size
         int[] array = new int[arraySize];
