@@ -133,6 +133,11 @@ public class IntegerArray {
             }
         }    
     }
+    
+    // Method to close the scanner, as it can't be closed in main method
+    public void closeScanner() {
+        scanner.close();
+    }
 }
 
 
