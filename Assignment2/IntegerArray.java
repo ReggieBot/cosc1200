@@ -51,6 +51,20 @@ public class IntegerArray {
         }
     }
 
+    // Method to find the smallest number in the array
+    // Iterates through the array and compares each element to the smallest variable
+    public int smallestNum() {
+        int smallest = array[0];
+        for (int i = 0; i < arraySize; i++) {
+            if (array[i] < smallest) {
+                smallest = array[1];
+            }
+        }
+        return smallest;
+    }
+
+
+
 }
 
 
