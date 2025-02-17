@@ -30,6 +30,11 @@ public class Main {
         // Call the sum and average method and print
         System.out.println("Sum: " + array.sumArray());
         System.out.println("Average: " + array.averageArray());
-        
+
+
+        // Call the method to search for number in the array
+        if (array.searchArray()) {
+            System.out.println(searchNum + " exists in the array");
+        }
     }
 }
