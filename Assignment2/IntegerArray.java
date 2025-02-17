@@ -17,12 +17,12 @@ package Assignment2;
 import java.util.Scanner;
 
 public class IntegerArray {
-    // Class variables (static so they can be accessed anywhere without an object)
-    static Scanner scanner = new Scanner(System.in);
-    static int[] array;
-    static int arraySize;
+    // Initialized variables for the class
+    private Scanner scanner = new Scanner(System.in);
+    private int[] array;
+    private int arraySize;
 
-    
+
 }
 
 
