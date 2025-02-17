@@ -22,6 +22,28 @@ public class IntegerArray {
     private int[] array;
     private int arraySize;
 
+    // method to initialize the array
+    public void initializeArray() {
+        // Get array size from user
+        System.out.println("Please enter the size of the array: ");
+        arraySize = scanner.nextInt();
+
+        // Loop to reprompt user if they enter invalid arraySize input (>20 - <1)
+        while (arraySize > 20 || arraySize < 1) {
+            System.out.println("Invalid: Please enter a number between 1-20");
+            arraySize = scanner.nextInt();
+
+
+        // Get values from user and append to array
+        // TODO: Add a loop to reprompt user if they enter invalid input (non-int)
+        array = new int[arraySize];
+        System.out.println("Please enter " + arraySize + " values (integers): ");
+        for (int i = 0; i < arraySize; i++) {
+            array[i] = scanner.nextInt();
+        }
+        }
+    }
+
 
 }
 
