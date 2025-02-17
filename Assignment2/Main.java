@@ -43,5 +43,10 @@ public class Main {
         } else {
             System.out.println(searchNum + " does not exist in the array");
         }
+
+        // Call the bubbleSort method to sort the array and then print
+        array.bubbleSort();
+        System.out.println("Sorted Array: ");
+        array.displayArray();
     }
 }
