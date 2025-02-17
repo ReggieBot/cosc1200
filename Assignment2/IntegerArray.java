@@ -9,39 +9,10 @@
 // It will also perform a bubble sort and print the sorted array
 
 
+// This class is where all the array methods will be stored
 
 
 package Assignment2;
 
 import java.util.Scanner;
 
-public class IntegerArray {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // Ask user for array size
-        System.out.println("Please enter the size of the array: ");
-        int arraySize = scanner.nextInt();
-
-        // Input validation 
-        while (arraySize > 20 || arraySize < 1) {
-            System.out.println("Please enter a array size between 1-20");
-            arraySize = scanner.nextInt();
-        }
-        
-
-        // Create array with user input size
-        int[] array = new int[arraySize];
-
-        // Ask user for array elements and append to array
-        System.out.println("Please enter the elements of the array: ");
-        
-        for (int i = 0; i < arraySize; i++) {
-            array[i] = scanner.nextInt();
-        }
-
-
-
-        
-    }
-}
