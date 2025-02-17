@@ -63,7 +63,17 @@ public class IntegerArray {
         return smallest;
     }
 
-
+    // Method to find the largest number in the array
+    // Iterates through the array and compares each element to the largest variable
+    public int largestNum() {
+        int largest = array[0];
+        for (int i = 0; i < arraySize; i++) {
+            if (array[i] > largest) {
+                largest = array[i];
+            }
+        }
+        return largest;
+    }
 
 }
 
