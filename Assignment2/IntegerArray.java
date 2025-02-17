@@ -75,6 +75,16 @@ public class IntegerArray {
         return largest;
     }
 
+    // Method to find the sum of array
+    // Iterates through the array and adds each element
+    public int sumArray() {
+        int sum = 0;
+        for (int i = 0; i < arraySize; i++) {
+            sum = sum + array[i];
+        }
+        return sum;
+    }
+
 }
 
 
