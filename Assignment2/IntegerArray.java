@@ -85,6 +85,39 @@ public class IntegerArray {
         return sum;
     }
 
+    // Method to find the average of array
+    // Calls the sumArray method and divides by arraySize
+    public double averageArray() {
+        return sumArray() / arraySize;
+    }
+
+    // Method to search for a user inputted number in the array
+    // Iterates through the array and compares each element to user input
+    // Returns true if the number is found, otherwise returns false
+    public boolean searchArray() {
+        System.out.println("Please enter a number to search for: ");
+        int searchNum = scanner.nextInt();
+        for (int i = 0; i < arraySize; i++) {
+            if (array[i] == searchNum) {
+                return true;
+            }
+        } return false;
+    }
+
+    // Method to perform bubble sort on the array
+    // Iterates through the array and compares each element to the next element
+    // if the next element is smaller than the current, swap them
+    // Continues to iterate until no more swaps can be performed
+    // https://www.geeksforgeeks.org/bubble-sort-algorithm/
+
+    public void bubbleSort() {
+        // Outer loop - How many times to iterate through the array
+        for (int i = 0; i < arraySize; i++) {
+            // Inner loop - Compares each element to the next element 
+        }    
+    }
 }
+
+
 
 
