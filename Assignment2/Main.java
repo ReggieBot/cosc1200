@@ -11,9 +11,11 @@
 // This class is where the main method will be stored, methods will be called from the IntegerArray class
 
 package Assignment2;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         // Create an instance of the IntegerArray class
         IntegerArray array = new IntegerArray();
 
@@ -33,8 +35,13 @@ public class Main {
 
 
         // Call the method to search for number in the array
-        if (array.searchArray()) {
+        // Passess searchNum as a parameter
+        System.out.println("Please enter a number to search for: ");
+        int searchNum = scanner.nextInt();
+        if (array.searchArray(searchNum) == true)  {
             System.out.println(searchNum + " exists in the array");
+        } else {
+            System.out.println(searchNum + " does not exist in the array");
         }
     }
 }
