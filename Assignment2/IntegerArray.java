@@ -113,7 +113,24 @@ public class IntegerArray {
     public void bubbleSort() {
         // Outer loop - How many times to iterate through the array
         for (int i = 0; i < arraySize; i++) {
+            // Boolean to check if any swaps were made
+            boolean swapped = false;
             // Inner loop - Compares each element to the next element 
+            for (int j = 0; j < arraySize - i - 1; j++) {
+                // If the next element is smaller than current index, swap them
+                if (array[j] > array[j + 1]) {
+                    int temporary = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temporary;
+                    swapped = true;
+                }
+            }
+            // If no swaps were made, break the loop
+            // If none were made, the array is already sorted
+            // This optimizes the array so that it doesn't iterate if already sorted
+            if (!swapped) {
+                break;
+            }
         }    
     }
 }
