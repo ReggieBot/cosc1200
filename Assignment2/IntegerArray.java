@@ -31,7 +31,7 @@ public class IntegerArray {
         while (arraySize > 20 || arraySize < 1) {
             System.out.println("Invalid: Please enter a number between 1-20");
             arraySize = scanner.nextInt();
-
+        }
 
         // Get values from user and append to array
         // TODO: Add a loop to reprompt user if they enter invalid input (non-int)
@@ -40,9 +40,16 @@ public class IntegerArray {
         for (int i = 0; i < arraySize; i++) {
             array[i] = scanner.nextInt();
         }
+    }
+    
+    // Method to display array
+    // Iterates through the array and prints each element with a comma
+    public void displayArray() {
+        System.out.println("Array: ");
+        for (int i = 0; i < arraySize; i++) {
+            System.out.print(array[i] + ", ");
         }
     }
-
 
 }
 
