@@ -1,9 +1,16 @@
+// Reggie Brown
+// reggie.brown@dcmail.ca
+// 3/10/25
+// Assignment 3
+// Professor Tauhid
+
+// // This is the main class of the program
+// All the other classes are called from here
+// It uses a terminal based menu to display options to user (which method to call)
+
 package Assignment3;
 import java.util.Scanner;
 
-// This is the main class of the program
-// All the other classes are called from here
-// It uses a terminal based menu to display options to user (which method to call)
 public class Main {
     public static Scanner scanner = new Scanner(System.in);
 
