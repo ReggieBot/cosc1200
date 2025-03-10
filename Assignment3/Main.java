@@ -5,7 +5,7 @@ import java.util.Scanner;
 // All the other classes are called from here
 // It uses a terminal based menu to display options to user (which method to call)
 public class Main {
-    Scanner scanner = new Scanner(System.in);
+    public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         
@@ -22,6 +22,17 @@ public class Main {
             System.out.println("4. Reverse String (Recursion)");
             System.out.println("5. Exit");
             System.out.println("Enter your choice: ");
+
+            // Get user input for choice
+            int choice = scanner.nextInt();
+            scanner.nextLine(); // Newline character gets left behind, this removes it. Prevents skipping of next input
+            // Spent hours trying to debug this in a side project I did
+            // https://www.freecodecamp.org/news/java-scanner-nextline-call-gets-skipped-solved/
+
+            // Switch case to call the user chosen method
+            switch (choice) {
+                case 1:
+            }
         }
     }
 }
