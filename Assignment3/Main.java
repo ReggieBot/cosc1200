@@ -32,6 +32,23 @@ public class Main {
             // Switch case to call the user chosen method
             switch (choice) {
                 case 1:
+                    runSum();
+                    break;
+                case 2:
+                    runMultiply();
+                    break;
+                case 3:
+                    runMax();
+                    break;
+                case 4: 
+                    runReverse();
+                    break;
+                case 5:
+                    System.out.println("exiting...");
+                    menu = false;
+                    break;
+                default:
+                    System.out.println("Please enter a valid choice");
             }
         }
     }
