@@ -96,9 +96,25 @@ public class Main {
             numbers[i] = scanner.nextInt();
         }
         scanner.nextLine(); // removing newLine char, see above comment
+
+        // Call the findMax method to find the maximum number
+        int max = FindMax.findMax(numbers);
+        System.out.println("Maximum number = " + max);
     }
 
-    
+    // Method to run the reverseString method (q4)
+    private static void runReverse() {
+        // Display header
+        System.out.println("--- Reverse String ---");
 
+        // Get user input
+        System.out.println("Enter a string to be reversed: ");
+        String input = scanner.nextLine();
+
+        // Call the reverseString method to reverse the string
+        String reversed = StringReverse.stringReverse(input);
+        System.out.println("Reversed string = " + reversed);
+        
+    }
 
 }
