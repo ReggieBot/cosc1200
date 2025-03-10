@@ -18,3 +18,6 @@ I've created a terminal-based menu in the main class, built off of the menu I cr
 No external libraries were used, and the only imported library is the java.Util.Scanner class. This is a part of the standard JDK and does not need additional installs (as I'm sure you know). 
 
 This was a fun project. And although the criteria doesn't stipulate that we create a menu, I wanted to include one for ease of use, not to mention, I enjoy extra programming.
+
+I made numerous commits to my GitHub repository during development. These can be found at the following link:
+https://github.com/ReggieBot/cosc1200/tree/main/Assignment3
