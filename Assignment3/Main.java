@@ -12,7 +12,7 @@ public class Main {
         // Set menu = true, this keeps menu running until user exits
         boolean menu = true;
 
-        while(menu = true) {
+        while(menu) {
             
             // Display menu options
             System.out.println("--- Assignment 3 ---");
@@ -79,7 +79,7 @@ public class Main {
         System.out.println("--- Multiply Numbers ---");
 
         // Get user input
-        System.out.println("Enter second number: ");
+        System.out.println("Enter first number: ");
         int number1 = scanner.nextInt();
 
         System.out.println("Enter second number: ");
