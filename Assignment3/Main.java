@@ -36,7 +36,7 @@ public class Main {
         }
     }
 
-    // Method to run the sum method
+    // Method to run the sum method (q1)
     // These methods will be void because the methods they call will return the result
     private static void runSum() {
         // Display header
@@ -48,6 +48,7 @@ public class Main {
 
         System.out.println("Enter second number: ");
         int num2 = scanner.nextInt();
+        scanner.nextLine(); // removing newLine char, see above comment
 
         // Call the caclulateSum method from the CalculateSum class
         // We don't need to create an object of the class because the method is static
@@ -55,7 +56,7 @@ public class Main {
         System.out.println("Sum = " + sum);
     }
 
-    // Method to run the multiply method
+    // Method to run the multiply method (q2)
     private static void runMultiply() {
         // Display header
         System.out.println("--- Multiply Numbers ---");
@@ -69,6 +70,7 @@ public class Main {
 
         System.out.println("Enter third number: ");
         int number3 = scanner.nextInt();
+        scanner.nextLine(); // removing newLine char, see above comment
 
         int productOf2 = MethodOverloading.multiply(number1, number2);
         System.out.println("Product of 2 numbers = " + productOf2);
@@ -76,4 +78,27 @@ public class Main {
         int productof3 = MethodOverloading.multiply(number1, number2, number3);
         System.out.println("Product of 3 numbers = " + productof3);
     }
+
+    // Method to run the findMax method (q3)
+    private static void runMax() {
+        // Display header
+        System.out.println("--- Find Maximum ---");
+
+        // Get user input
+        System.out.println("How many integers would you like to enter? ");
+        int arraySize = scanner.nextInt();
+
+        int[] numbers = new int[arraySize];
+
+        // For loop to get user input for array
+        for (int i = 0; i < arraySize; i++) {
+            System.out.println("Enter numbers: ");
+            numbers[i] = scanner.nextInt();
+        }
+        scanner.nextLine(); // removing newLine char, see above comment
+    }
+
+    
+
+
 }
