@@ -35,4 +35,23 @@ public class Main {
             }
         }
     }
+
+    // Method to run the sum method
+    // These methods will be void because the methods they call will return the result
+    private static void runSum() {
+        // Display menu
+        System.out.println("--- Calculate Sum ---");
+
+        // Get user input 
+        System.out.println("Enter first number: ");
+        int num1 = scanner.nextInt();
+
+        System.out.println("Enter second number: ");
+        int num2 = scanner.nextInt();
+
+        // Call the caclulateSum method from the CalculateSum class
+        // We don't need to create an object of the class because the method is static
+        int sum = CalculateSum.calculateSum(num1, num2);
+        System.out.println("Sum = " + sum);
+    }
 }
