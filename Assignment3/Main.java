@@ -39,7 +39,7 @@ public class Main {
     // Method to run the sum method
     // These methods will be void because the methods they call will return the result
     private static void runSum() {
-        // Display menu
+        // Display header
         System.out.println("--- Calculate Sum ---");
 
         // Get user input 
@@ -53,5 +53,27 @@ public class Main {
         // We don't need to create an object of the class because the method is static
         int sum = CalculateSum.calculateSum(num1, num2);
         System.out.println("Sum = " + sum);
+    }
+
+    // Method to run the multiply method
+    private static void runMultiply() {
+        // Display header
+        System.out.println("--- Multiply Numbers ---");
+
+        // Get user input
+        System.out.println("Enter second number: ");
+        int number1 = scanner.nextInt();
+
+        System.out.println("Enter second number: ");
+        int number2 = scanner.nextInt();
+
+        System.out.println("Enter third number: ");
+        int number3 = scanner.nextInt();
+
+        int productOf2 = MethodOverloading.multiply(number1, number2);
+        System.out.println("Product of 2 numbers = " + productOf2);
+
+        int productof3 = MethodOverloading.multiply(number1, number2, number3);
+        System.out.println("Product of 3 numbers = " + productof3);
     }
 }
