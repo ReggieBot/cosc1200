@@ -1,3 +1,12 @@
+// COSC 1200 | In-Class Exercise 3
+// Prof. Tauhid
+// Reggie Brown | reggie.brown@dcmail.ca
+// March 19, 2025
+// Desc: This program simulates a grading system for a class of 5 students.
+// The program will prompt the user to enter the name and grade of each student.
+// The program will validate the grade input and throw an exception if the grade is outside the valid range.
+// The program will display the student's name, grade, and whether they passed or failed.
+
 package ICE3;
 
 import java.util.Scanner;

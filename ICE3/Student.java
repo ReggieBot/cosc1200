@@ -1,6 +1,13 @@
-package ICE3;
+// COSC 1200 | In-Class Exercise 3
+// Prof. Tauhid
+// Reggie Brown | reggie.brown@dcmail.ca
+// March 19, 2025
+// Desc: This class represents a student with a name and grade. 
+// The grade must be between 0 and 100. 
+// The student is considered to have passed if their grade is 50 or higher.
 
-// Student calss for storing student 
+
+package ICE3;
 
 public class Student {
     private String name;
