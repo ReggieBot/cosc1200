@@ -35,7 +35,7 @@ public class GradingSystem {
                 System.out.println("\nStudent # " + (i + 1));
 
                 // get student name
-                System.out.print("Enter Student name; ");
+                System.out.print("Enter Student name: ");
                 String name = scanner.nextLine();
 
                 // get student grade
