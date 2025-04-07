@@ -16,7 +16,7 @@ public abstract class Book {
 
     // Abstract method to get book type
     // This method will be implemented in subclass
-    public abstract void get_book_type();
+    public abstract String get_book_type();
 
     // Print book details
     public void display_info() {
