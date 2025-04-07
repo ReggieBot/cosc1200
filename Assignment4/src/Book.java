@@ -29,4 +29,23 @@ public abstract class Book {
         System.out.println("Year Published: " + yearPublished);
         System.out.println("-------------------------");
     }
+
+    // Getters
+    // These are needed because we are using composition (a reference to Book) in BorrowableBook class
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public int getYearPublished() {
+        return yearPublished;
+    }
 }
