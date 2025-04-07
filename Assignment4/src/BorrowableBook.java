@@ -48,4 +48,14 @@ public class BorrowableBook extends Book implements Borrowable{
             System.out.println("Borrow Status: No");
         }
     }
+
+
+    // Getter for class vars
+    public boolean isBorrowed() {
+        return isBorrowed;
+    }
+
+    public Book getReferenceBook() {
+        return referenceBook;
+    }
 }
