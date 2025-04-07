@@ -10,6 +10,13 @@
 // while keeping inventory. It implements different data structures in order to efficiently accomplish this
 // including stacks, queues, and linked lists.
 
+// NOTE
+// Due to Java not supporting Multiple Inheritance, a seperate interface was created.
+// The BorrowableBook class needs to inherit from both FictionBook & NonFictionBook. 
+// To get around this problem, a seperate Interface class "Borrowable" was created.
+// Class BorrowableBook now extends "Book", and implements "Borrowable"
+
 
 
 // -----------REFERENCES-----------
+// https://stackoverflow.com/questions/94361/when-do-you-use-javas-override-annotation-and-why
