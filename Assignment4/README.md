@@ -29,3 +29,4 @@
 // https://www.w3schools.com/java/java_linkedlist.aspja
 // https://medium.com/@AlexanderObregon/introduction-to-stacks-in-java-a-beginners-guide-e3b8d8013c35
 // https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html
+// https://www.w3schools.com/java/ref_linkedlist_get.asp
