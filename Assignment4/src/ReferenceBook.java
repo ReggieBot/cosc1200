@@ -1,7 +1,7 @@
 package Assignment4.src;
 
 public class ReferenceBook extends Book {
-    private boolean restricted = true;
+    private static boolean restricted = true;
 
     // Constructor
     public ReferenceBook(String title, String author, String isbn, int yearPublished) {
@@ -18,4 +18,8 @@ public class ReferenceBook extends Book {
         super.display_info();
         System.out.println("This is a reference book and cannot be borrowed.");
     }  
+
+    public static boolean isRestricted() {
+        return restricted;
+    }
 }
