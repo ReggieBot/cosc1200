@@ -25,3 +25,4 @@
 // https://stackoverflow.com/questions/94361/when-do-you-use-javas-override-annotation-and-why
 // https://www.digitalocean.com/community/tutorials/composition-in-java-example
 // https://en.wikipedia.org/wiki/Composition_over_inheritance
+https://www.w3schools.com/java/ref_keyword_instanceof.asp
