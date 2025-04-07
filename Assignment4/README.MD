@@ -1,4 +1,7 @@
 // Reggie Brown
+// 07/04/25
+// reggie.brown@dcmail.ca
+// https://github.com/ReggieBot/cosc1200/tree/main/Assignment4
 // Professor Tauhid
 // Durham College COSC1200 (Object Oriented Programming 1)
 // ----------DESCRIPTION----------
