@@ -7,8 +7,11 @@ public class BorrowableBook extends Book implements Borrowable{
     private Book borrowableBook;
 
     // Constructor
+    // Call the Book constructor with the wrapped book's information
+    // This maintains the Book identity while adding borrowable behavior
     public BorrowableBook(Book borrowableBook) {
         super(borrowableBook.getTitle(), borrowableBook.getAuthor(), borrowableBook.getIsbn(), borrowableBook.getYearPublished());
+        // store reference to wrapped book
         this.borrowableBook = borrowableBook;
     }
 
@@ -19,7 +22,7 @@ public class BorrowableBook extends Book implements Borrowable{
 
     @Override
     public void borrow() {
-        if (borrowableBook instanceof ReferenceBook || ReferenceBook.isRestricted()) {
+        if (borrowableBook instanceof ReferenceBook && ReferenceBook.isRestricted()) {
             System.out.println("Referene Books are not borrowable. Book: " + borrowableBook.getTitle());
         } else if (!isBorrowed) {
             isBorrowed = true;
