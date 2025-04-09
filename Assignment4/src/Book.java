@@ -20,9 +20,7 @@ public abstract class Book {
 
     // Print book details
     public void display_info() {
-        System.out.println("-------------------------");
         System.out.println("-------Book Details------");
-        System.out.println("-------------------------");
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
         System.out.println("ISBN: " + isbn);
