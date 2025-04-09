@@ -31,7 +31,6 @@ public abstract class Book {
     }
 
     // Getters
-    // These are needed because we are using composition (a reference to Book) in BorrowableBook class
 
     public String getTitle() {
         return title;
