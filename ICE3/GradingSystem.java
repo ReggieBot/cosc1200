@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class GradingSystem {
     public static void main(String[] args) {
         // declaring constants
-        final int MAX_STUDENTS = 5;
+        final int MAX_STUDENTS = 3;
         final int PASSING_GRADE = 50;
 
         // counters
