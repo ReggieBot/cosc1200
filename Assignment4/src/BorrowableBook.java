@@ -7,10 +7,11 @@ public class BorrowableBook extends Book implements Borrowable{
     private Book borrowableBook;
 
     // Constructor
-    // This constructor takes a Book object and initializes the BorrowableBook with the same properties
-    // It uses the constructor of the superclass (Book) to set the title, author, ISBN, and year published
+    // Call the Book constructor with the wrapped book's information
+    // This maintains the Book identity while adding borrowable behavior
     public BorrowableBook(Book borrowableBook) {
         super(borrowableBook.getTitle(), borrowableBook.getAuthor(), borrowableBook.getIsbn(), borrowableBook.getYearPublished());
+        // store reference to wrapped book
         this.borrowableBook = borrowableBook;
     }
 
