@@ -61,6 +61,25 @@ public class LibraryUI extends JFrame implements ActionListener {
         // center window
         setLocationRelativeTo(null);
 
-        // Initialize
+        // Initialize the toolbar, menu, table, and form panel
+        initMenu();
+        initToolbar();
+        JPanel formPanel = createFormPanel();
+        initTable();
+
+        // Using BorderLayout to arrange comp.
+        Container contentPane = getContentPane();
+        contentPane.setLayout(new BorderLayout());
+        contentPane.add(createToolbarPanel(), BorderLayout.NORTH);
+        container.add(formPanel, BorderLayout.WEST);
+        container.add(new JScrollPane(bookTable), BorderLayout.CENTER);
+
+        // set visible
+        setVisible(true);
+
     }
+
+    // create panel for toolbar
+    // contains buttons for adding, issuing, processing requests, returning books, and viewing history
+    private JPanel createToolBarPanel;
 }
