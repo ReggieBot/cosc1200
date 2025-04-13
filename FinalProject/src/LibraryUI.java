@@ -9,6 +9,7 @@ import javax.swing.border.*;
 import javax.swing.table.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -223,10 +224,20 @@ public class LibraryUI extends JFrame implements ActionListener {
         } else if (command.equals("Exit")) {
             System.exit(0);
         } else if (e.getSource() == openMenuItem) {
-            //availableBooks = DataPersistence.loadData();
-            refreshTable();
+            try {
+                availableBooks = DataPersistence.loadData();
+                refreshTable();
+            } catch (IOException ex) {
+                JOptionPane.showMessageDialog(this, "Error loading data: " + ex.getMessage(), 
+                    "Error", JOptionPane.ERROR_MESSAGE);
+            }
         } else if (e.getSource() == saveMenuItem) {
-            //DataPersistence.saveData(availableBooks);
+            try {
+                DataPersistence.saveData(availableBooks);
+            } catch (IOException ex) {
+                JOptionPane.showMessageDialog(this, "Error saving data: " + ex.getMessage(), 
+                    "Error", JOptionPane.ERROR_MESSAGE);
+            }
         } else if (e.getSource() == aboutMenuItem) {
             JOptionPane.showMessageDialog(this, "Hello!\nDurham College Library System\nDeveloped By Reggie Brown\nProfessor Tauhid", "About", JOptionPane.INFORMATION_MESSAGE);
 

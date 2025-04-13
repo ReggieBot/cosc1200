@@ -2,6 +2,7 @@ package FinalProject.src;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -15,8 +16,10 @@ public class DataPersistence {
     // Uses a linked list to store
     // Throws an IOException if error occurs
     public static void saveData(LinkedList<BorrowableBook> availableBooks) throws IOException {
+        System.out.println("data will be saved to: " + new File(FILE_NAME).getAbsolutePath());
+
         // Create a writer to write to the file
-        BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME));
+        BufferedWriter writer = new BufferedWriter(new FileWriter("data.txt"));
         
         // Loop through all the available books
         for (int i = 0; i < availableBooks.size(); i++) {
@@ -30,6 +33,7 @@ public class DataPersistence {
                           book.getIsbn() + "|" +
                           book.getYearPublished() + "|" + 
                           "N/A";
+            System.out.println("Writing Line: " + line);
             
             // Write the line to the file
             writer.write(line);
@@ -51,7 +55,7 @@ public class DataPersistence {
         
         String line;
         
-        // kee reading lines until there are no more
+        // keep reading lines until there are no more
         while ((line = reader.readLine()) != null) {
             // split the line into parts using | as the separator
             // need to escape the | by using \\ as | is reserved for regex??
@@ -94,17 +98,15 @@ public class DataPersistence {
             
             // create a new book
             availableBooks.add(new BorrowableBook(newBook));
-
+        }
 
         
         // Close the reader when done
         reader.close();
         
-        // Close the reader when done
-        reader.close();
+    
+
+        // Return the list of books we loaded
+        return availableBooks;
     }
-
-    // Return the list of books we loaded
-    return availableBooks;
-}
 }
