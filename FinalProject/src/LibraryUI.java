@@ -9,6 +9,9 @@ import javax.swing.border.*;
 import javax.swing.table.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -233,8 +236,10 @@ public class LibraryUI extends JFrame implements ActionListener {
             }
         } else if (e.getSource() == saveMenuItem) {
             try {
+                System.out.println("Save menu item clicked. About to call saved data");
                 DataPersistence.saveData(availableBooks);
             } catch (IOException ex) {
+                System.err.println("Exception during save: " + ex.getMessage());
                 JOptionPane.showMessageDialog(this, "Error saving data: " + ex.getMessage(), 
                     "Error", JOptionPane.ERROR_MESSAGE);
             }

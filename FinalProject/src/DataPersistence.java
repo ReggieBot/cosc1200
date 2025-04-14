@@ -10,13 +10,13 @@ import java.util.LinkedList;
 
 public class DataPersistence {
     // Name of the file where book data is stored
-    private static final String FILE_NAME = "data.txt";
+    private static final String FILE_PATH = "/home/reggie/cosc1200/FinalProject/src/data.txt";
     
     // Saves available books to file
     // Uses a linked list to store
     // Throws an IOException if error occurs
     public static void saveData(LinkedList<BorrowableBook> availableBooks) throws IOException {
-        System.out.println("data will be saved to: " + new File(FILE_NAME).getAbsolutePath());
+        System.out.println("data will be saved to: " + new File(FILE_PATH).getAbsolutePath());
 
         // Create a writer to write to the file
         BufferedWriter writer = new BufferedWriter(new FileWriter("data.txt"));
@@ -34,9 +34,12 @@ public class DataPersistence {
                           book.getYearPublished() + "|" + 
                           "N/A";
             System.out.println("Writing Line: " + line);
-            
-            // Write the line to the file
-            writer.write(line);
+
+            try{
+                writer.write(line);
+            } catch (IOException e) {
+                System.out.println("Error writing to file: " + e.getMessage());
+            }
             // Move to the next
             writer.newLine();
         }
@@ -51,7 +54,7 @@ public class DataPersistence {
     public static LinkedList<BorrowableBook> loadData() throws IOException {
         LinkedList<BorrowableBook> availableBooks = new LinkedList<>();
         
-        BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME));
+        BufferedReader reader = new BufferedReader(new FileReader(FILE_PATH));
         
         String line;
         
