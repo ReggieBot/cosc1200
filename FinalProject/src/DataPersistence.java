@@ -10,7 +10,7 @@ import java.util.LinkedList;
 
 public class DataPersistence {
     // Name of the file where book data is stored
-    private static final String FILE_PATH = "/home/reggie/cosc1200/FinalProject/src/data.txt";
+    private static final String FILE_PATH = "data.txt";
     
     // Saves available books to file
     // Uses a linked list to store

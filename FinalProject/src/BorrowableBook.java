@@ -24,6 +24,7 @@ public class BorrowableBook extends Book implements Borrowable{
     public void borrow() {
         if (borrowableBook instanceof ReferenceBook && ReferenceBook.isRestricted()) {
             System.out.println("Referene Books are not borrowable. Book: " + borrowableBook.getTitle());
+            return;
         } else if (!isBorrowed) {
             isBorrowed = true;
             System.out.println("Successfully Borrowed Book: " + borrowableBook.getTitle());
